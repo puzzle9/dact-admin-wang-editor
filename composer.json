@@ -3,7 +3,7 @@
     "description": "WangEditor extension for dcat-admin",
     "type": "library",
     "keywords": ["dcat-admin", "extension", "editor"],
-    "homepage": "https://github.com/puzzle9/DactAdminWangEditor",
+    "homepage": "https://github.com/puzzle9/dact-admin-wang-editor",
     "license": "MIT",
     "authors": [
         {
