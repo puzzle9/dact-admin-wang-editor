@@ -1,14 +1,14 @@
 <?php
 
-namespace Dcat\Admin\Extension\WangEditor;
+namespace puzzle9\DactAdminWangEditor;
 
 use Dcat\Admin\Extension;
 
-class WangEditor extends Extension
+class DactAdminWangEditor extends Extension
 {
-    const NAME = 'wang-editor';
+    const NAME = 'dact-admin-wang-editor';
 
-    protected $serviceProvider = WangEditorServiceProvider::class;
+    protected $serviceProvider = DactAdminWangEditorServiceProvider::class;
 
     protected $composer = __DIR__.'/../composer.json';
 

@@ -1,5 +1,5 @@
 {
-    "name": "dcat-admin-extensions/WangEditor",
+    "name": "puzzle9/dact-admin-wang-editor",
     "description": "WangEditor extension for dcat-admin",
     "type": "library",
     "keywords": ["dcat-admin", "extension", "editor"],
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dcat\\Admin\\Extension\\WangEditor\\": "src/"
+            "puzzle9\\DactAdminWangEditor\\": "src/"
         },
          "files": [
             "src/bootstrap.php"

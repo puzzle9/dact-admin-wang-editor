@@ -1,16 +1,16 @@
 <?php
 
-namespace Dcat\Admin\Extension\WangEditor\Http\Controllers;
-
-use Illuminate\Http\Request;
+namespace puzzle9\DactAdminWangEditor\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 
-use Dcat\Admin\Extension\WangEditor\WangEditor;
+use Illuminate\Http\Request;
+
+use puzzle9\DactAdminWangEditor\DactAdminWangEditor;
 
 use Illuminate\Support\Facades\Storage;
 
-class WangEditorController extends Controller
+class DactAdminWangEditorController extends Controller
 {
     // todo: 根据 config 验证 上传文件数 / 文件大小
     public function upFile(Request $request)
@@ -19,7 +19,7 @@ class WangEditorController extends Controller
             'files' => 'file',
         ]);
 
-        $disk = WangEditor::make()->config('disk', config('admin.upload.disk'));
+        $disk = DactAdminWangEditor::make()->config('disk', config('admin.upload.disk'));
         $storage = Storage::disk($disk);
 
         $urls = [];

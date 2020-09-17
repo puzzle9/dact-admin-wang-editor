@@ -11,18 +11,18 @@ Dcat Admin扩展 - WangEditor
 ## 安装
 
 ```sh
-composer require dcat-admin-extensions/WangEditor
+composer require puzzle9/dact-admin-wang-editor
 ```
 
 ```sh
-php artisan admin:import WangEditor
+php artisan admin:import dact-admin-wang-editor
 ```
 
 `config/admin-extensions.php`
 
 ```php
     'extensions' => [
-        'wang-editor' => [
+        'dact-admin-wang-editor' => [
             'enable' => true,
             // 储存 disk
             'disk' => 'public',

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Extension\WangEditor;
+namespace puzzle9\DactAdminWangEditor;
 
 use Dcat\Admin\Form\Field;
 use Illuminate\Support\Str;
@@ -8,14 +8,14 @@ use Illuminate\Support\Str;
 class Editor extends Field
 {
     protected static $js = [
-        '@extension/wang-editor/wangEditor.min.js',
+        '@extension/dact-admin-wang-editor/wangEditor.min.js',
     ];
 
     protected $options = [
 
     ];
 
-    protected $view = 'wang-editor::editor';
+    protected $view = 'dact-admin-wang-editor::editor';
 
     /**
      * 设置编辑器高度
@@ -39,7 +39,7 @@ class Editor extends Field
 
         $name = $this->formatName($this->column);
 
-        $config = json_encode(array_merge(WangEditor::make()->config('config', []), $this->options));
+        $config = json_encode(array_merge(DactAdminWangEditor::make()->config('config', []), $this->options));
 
         $uploadImgServer = route('WangEditorUpFile');
 

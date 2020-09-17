@@ -1,21 +1,21 @@
 <?php
 
-namespace Dcat\Admin\Extension\WangEditor;
+namespace puzzle9\DactAdminWangEditor;
 
 use Dcat\Admin\Form;
 use Illuminate\Support\ServiceProvider;
 
-class WangEditorServiceProvider extends ServiceProvider
+class DactAdminWangEditorServiceProvider extends ServiceProvider
 {
     /**
      * {@inheritdoc}
      */
     public function boot()
     {
-        $extension = WangEditor::make();
+        $extension = DactAdminWangEditor::make();
 
         if ($views = $extension->views()) {
-            $this->loadViewsFrom($views, WangEditor::NAME);
+            $this->loadViewsFrom($views, DactAdminWangEditor::NAME);
         }
 
         $this->app->booted(function () use ($extension) {

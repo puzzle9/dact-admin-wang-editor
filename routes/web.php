@@ -1,5 +1,5 @@
 <?php
 
-use Dcat\Admin\Extension\WangEditor\Http\Controllers;
+use puzzle9\DactAdminWangEditor\Http\Controllers;
 
-Route::post('wang-editor/upFile', Controllers\WangEditorController::class.'@upFile')->middleware(config('admin.route.middleware'))->name('WangEditorUpFile');
+Route::post('wang-editor/upFile', Controllers\DactAdminWangEditorController::class.'@upFile')->middleware(config('admin.route.middleware'))->name('WangEditorUpFile');
