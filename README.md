@@ -28,6 +28,8 @@ php artisan admin:import dact-admin-wang-editor
             'disk' => 'public',
             // http://www.wangeditor.com/doc/pages/03-配置菜单/
             'config' => [
+                // 设置默认 zIndex
+                'zIndex' => 1,
                 // 粘贴样式的过滤
                 'pasteFilterStyle' => true,
                 // 粘贴内容中的图片
@@ -78,4 +80,8 @@ $form->editor('content')->height(500)->required();
 ### 修改编辑器高度
 ```php
 $form->editor('content')->height(500);
+```
+### 修改编辑器zIndex
+```php
+$form->editor('content')->zIndex(1);
 ```

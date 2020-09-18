@@ -28,6 +28,17 @@ class Editor extends Field
         return $this;
     }
 
+    /**
+     * 设置编辑器zIndex
+     * @param int $zIndex
+     * @return Editor
+     */
+    public function zIndex(int $zIndex)
+    {
+        $this->options['zIndex'] = $zIndex;
+        return $this;
+    }
+
     protected function generateId()
     {
         return 'editor-'.Str::random(8);
